@@ -1,5 +1,18 @@
-<h1> <%= @article.title %> </h1>
-  <p> <%= @article.content %> </p>
-  <%= link_to "Supprimer l'article", article_path(@article), method: :delete, data: { confirm: 'Are you sure ?'} %>
-  <%= link_to "Modifier l'article", edit_article_path(@article) %> <br>
+<h1> <%= @article.title %>
+  <%= link_to article_path method: :delete, data: { confirm: 'Are you sure ?'} do %>
+    <i class="fas fa-times"></i>
+  <% end %>
+  <%= link_to edit_article_path(@article) do%>
+  <i class="fas fa-pen"></i>
+  <% end %>
+</h1>
+
+  <div class="article_info">
+    <img src="https://source.unsplash.com/random/600x400" alt="hasard">
+    <p> <%= @article.content %> </p>
+  </div>
+
   <%= link_to 'Retour à la base', root_path %>
+
+
+

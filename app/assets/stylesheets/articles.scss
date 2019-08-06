@@ -1,3 +1,33 @@
 // Place all the styles related to the articles controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+* {
+  margin: 10px;
+}
+
+.display {
+  margin: 30px, auto;
+ }
+
+a{
+  text-style: none;
+  color: #F94DFE;
+  text-decoration: none;
+}
+
+ul{
+  list-style: none;
+}
+
+.add{
+  color:red;
+}
+
+.article_info{
+  display:flex;
+}
+
+li{
+  font-weight:bold;
+  margin-bottom: 40px;
+}
